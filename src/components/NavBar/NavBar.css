@@ -1,0 +1,28 @@
+h1 {
+    text-align: left;
+    float: left;
+    font-size: 80px;
+    margin-left: 30px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.NavBarContainer {
+    float: left;
+    width: 100%;
+}
+
+.NavBar {
+    width: 150px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: #fff2f2;
+}
+
+.NavBar:active {
+    background-color: rgba(255, 123, 0, 0.9);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}

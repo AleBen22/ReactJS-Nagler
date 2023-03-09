@@ -1,0 +1,27 @@
+.Carrito {
+    width: 80px;
+    height: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #fff2f2;
+    float: right;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.Carrito-logo {
+    width: 40px;
+    margin: 5px;
+    height: 40px;
+    float: left;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    height: 50px;
+    margin-right: 6px;
+    line-height: 50px;
+}
