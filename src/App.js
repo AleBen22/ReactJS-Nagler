@@ -1,18 +1,24 @@
 import './App.css';
+//import { useState } from 'react'
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
-      <header className = "App-header">
+      <BrowserRouter>
         <NavBar/>
-      </header>
-      <section>
-        <ItemListContainer greeting={"Bienvenidos a admLoft"}/>
-      </section>
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting={"Bienvenidos a admLoft"}/>} />
+          <Route path='/category/:categoryId' element={<ItemListContainer greeting={"Bienvenidos a admLoft"}/>} />
+          <Route path='/item/:itemId' element={<ItemDetailContainer greeting={"Detalle de Producto"}/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
 export default App;

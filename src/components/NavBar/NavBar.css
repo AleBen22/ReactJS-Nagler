@@ -1,3 +1,13 @@
+.App-header {
+    width: 100%;
+    background-color: #ff751a;
+    height: 180px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 2px 3px 10px #000000;
+}
+
 h1 {
     text-align: left;
     float: left;
@@ -7,22 +17,26 @@ h1 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.NavBarContainer {
+.NavBarTitle {
     float: left;
-    width: 100%;
+    width: 90%;
+    color:#000000;
 }
 
 .NavBar {
-    width: 150px;
+    width: 250px;
     font-size: 25px;
     text-align: center;
+    padding: 5px;
     border: 1px solid #000000;
     border-radius: 10px;
+    color:#000000;
     margin: 15px;
     background-color: #fff2f2;
+    text-decoration:none;
 }
 
-.NavBar:active {
+.NavBar:hover {
     background-color: rgba(255, 123, 0, 0.9);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }

@@ -20,16 +20,6 @@
   }
 }
 
-.App-header {
-  width: 100%;
-  background-color: #ff751a;
-  height: 180px;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  box-shadow: 2px 3px 10px #000000;
-}
-
 .App-link {
   color: #61dafb;
 }
