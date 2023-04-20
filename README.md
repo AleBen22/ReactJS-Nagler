@@ -9,7 +9,7 @@ Ecommerce created for bulding managment companies
     $ npm start
 
 ## Environment Variables
-See [.env.example] for an example
+See [`.env.example`] for an example
 
 ## Built Using
     Create-React-App
