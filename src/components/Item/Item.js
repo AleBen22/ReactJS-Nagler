@@ -5,8 +5,8 @@ const Item = ({ id, name, price }) => {
 
     return (
         <div className= "Card">
-            <h2>{name}</h2>
-            <p>$ {price}</p>
+            <h3 className='CardTitle'>{name}</h3>
+            <p className='CardPrice'>$ {price}</p>
             <Link className="Link" to={`/item/${id}`} >ver detalle</Link>
         </div>
     )

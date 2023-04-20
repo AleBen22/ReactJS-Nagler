@@ -1,8 +1,9 @@
 .Carrito {
-    width: 6%;
+    width: auto;
     height: 50px;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 2%;
+    margin-top: 2%;
+    padding: 0;
     box-sizing: border-box;
     background-color: #fff2f2;
     float: right;
@@ -15,13 +16,22 @@
     margin: 5px;
     height: 40px;
     float: left;
-    box-sizing: border-box;
+    margin: 5px;
 }
 
 h2 {
-    text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     height: 50px;
-    margin-right: 6px;
     line-height: 50px;
+    float: left;
+    margin: 0;
+}
+
+.CartText {
+    width: auto;
+    margin-right: 5px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    float: right;
 }

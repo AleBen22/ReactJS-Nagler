@@ -19,12 +19,16 @@ h1 {
 
 .NavBarTitle {
     float: left;
-    width: 90%;
+    width: 60%;
     color:#000000;
 }
 
+.NavBarBox {
+    width: 100%;
+    float: left;
+}
+
 .NavBar {
-    width: 250px;
     font-size: 25px;
     text-align: center;
     padding: 5px;

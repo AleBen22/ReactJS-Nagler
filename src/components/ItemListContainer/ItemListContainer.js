@@ -1,26 +1,23 @@
 import './ItemListContainer.css'
-import { useEffect, useState } from 'react'
-import { getProducts, getProductsByCategory } from '../../asyncMock'
 import { useParams } from 'react-router-dom'
 import ItemList from '../ItemList/ItemList'
+import { getProducts } from '../../services/firebase/firestore/products'
+import { useAsync } from '../../hooks/useAsync'
 
 const ItemListContainer = ({ greeting }) => {
-    const [productsState, setProductsState] = useState([])
-    
     const { categoryId } = useParams()
+    
+    const getProductsWithCategory = () => getProducts(categoryId)
 
-    useEffect(() => {
+    const {data: productsState, error, loading} = useAsync(getProductsWithCategory, [categoryId])
 
-        const asynFunction = categoryId ? getProductsByCategory : getProducts
+    if(loading) {
+        return <h3 className="Titulo">Cargando...</h3>
+    }
 
-        asynFunction(categoryId)
-            .then(products => {
-                setProductsState(products)
-            })
-            .catch(error => {
-                console.log(error)
-            })
-    }, [categoryId])
+    if(error) {
+        return <h3 className="Titulo">Tuvimos problemas, refresca la página</h3>
+    }
 
     return (
         <div>
