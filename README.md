@@ -1,6 +1,6 @@
 # admLoftapp
 Ecommerce created for building managment companies.
-##### This app is under construccion
+##### This app is under construction
 
 ## Running Locally
     $ git clone https://github.com/AleBen22/ReactJS-Nagler.git
