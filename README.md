@@ -9,10 +9,10 @@ Ecommerce created for building managment companies.
     $ npm start
 
 ## Environment Variables
-See [`.env.example`](https://github.com/AleBen22/ReactJS-Nagler/.env.example) for an example
+See [`.env.example`](https://github.com/AleBen22/ReactJS-Nagler/blob/EntregaFinal%2BNagler/.env.example) for an example
 
 ## Video Example
-See [`admLoft App.webm`](https://github.com/AleBen22/ReactJS-Nagler/admLoft App.webm)
+See [`admLoft App.webm`](https://github.com/AleBen22/ReactJS-Nagler/blob/EntregaFinal%2BNagler/admLoft App.webm)
 
 ## Built Using
     Create-React-App
